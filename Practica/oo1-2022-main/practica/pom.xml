@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ar.edu.unlp.info.oo1</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0</version>
+	<name>parent</name>
+	<packaging>pom</packaging>
+	<description>Parent POM para los ejercicios de las prácticas. Contiene las definiciones comunes</description>
+
+	<properties>
+		<!-- Build properties -->
+		<maven.version>3.8.1</maven.version>
+		<java.version>11</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+		<!-- Dependency versions -->
+		<junit.jupiter.version>5.7.2</junit.jupiter.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+		<maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+	</properties>
+	<!-- Jupiter API for writing tests -->
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+						<execution>
+								<phase>package</phase>
+								<goals>
+										<goal>single</goal>
+								</goals>
+								<configuration>
+										<archive>
+										<manifest>
+												<mainClass>
+														ar.edu.unlp.info.oo1.Application
+												</mainClass>
+										</manifest>
+										</archive>
+										<descriptorRefs>
+												<descriptorRef>jar-with-dependencies</descriptorRef>
+										</descriptorRefs>
+								</configuration>
+						</execution>
+				</executions>
+			</plugin>			
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${maven-surefire-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>${maven-enforcer-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>enforce-versions</id>
+							<goals>
+								<goal>enforce</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<rules>
+							<requireMavenVersion>
+								<message>You are running an older version of Maven. This project requires at least Maven
+									${maven.version}
+								</message>
+								<version>[${maven.version},)</version>
+							</requireMavenVersion>
+							<requireJavaVersion>
+								<message>You are running an incompatible version of Java. This project supports JDK 11 to 12.
+								</message>
+								<version>[11,13)</version>
+							</requireJavaVersion>
+						</rules>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
