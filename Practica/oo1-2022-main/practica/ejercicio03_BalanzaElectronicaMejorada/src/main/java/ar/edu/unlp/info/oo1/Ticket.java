@@ -18,28 +18,13 @@ entender el mensaje getProductos():List<Producto> .
 */
 public class Ticket {
 	private LocalDate fecha;
-	private int candidadDeProductos;
-	private double pesoTotal;
-	private double precioTotal;
+	
+	//creamos un ArrayList posicion dinámica en memoria que representa una Lista para guardar otras colecciones u objetos
 	private List<Producto> productos = new ArrayList<Producto>();
 	
-	
-	public Ticket(int cantProd, double pesoTotal, double precioTotal) {
-		this.candidadDeProductos = cantProd;
-		this.pesoTotal = pesoTotal;
-		this.precioTotal = precioTotal + this.impuesto();
-		this.fecha = LocalDate.now();
-	}
-	
 	public Ticket(List<Producto> productos) {
-		this.candidadDeProductos = productos.size();
 		this.fecha = LocalDate.now();
-		
-		for(Producto i: productos) {
-			this.productos.add(i);
-			this.pesoTotal+= i.getPeso();
-			this.precioTotal+= i.getPrecio();
-		}
+		this.productos = productos;
 	}
 	
 	public double impuesto() {
@@ -50,16 +35,24 @@ public class Ticket {
 		return this.fecha;
 	}
 
-	public int getCantidadDeProductos() {
-		return this.candidadDeProductos;
-	}
-
-	public double getPesoTotal() {
-		return this.pesoTotal;
+	public double getPesoTotal() {		//usar los Stream
+		double pesoTotal = 0;		//no usar las variables privadas, crear locales
+		for (Producto producto: productos) {		//en lo posible no usar foreach
+			pesoTotal+= producto.getPeso(); 
+		}
+		return pesoTotal;
 	}
 
 	public double getPrecioTotal() {
-		return this.precioTotal;
+		double precioTotal = 0;
+		for (Producto producto: productos) {
+			precioTotal+= producto.getPrecio(); 
+		}
+		return precioTotal;
+	}
+
+	public int getCantidadDeProductos() {
+		return this.productos.size();
 	}
 	
 	public List<Producto> getProductos(){

@@ -11,39 +11,40 @@ el mensaje " getProductos() : List<Producto> " que retorna todos los productos i
 a la balanza (en la compra actual, es decir, desde la última vez que se la puso a cero).
 */
 public class Balanza {
-	private int cantiadadDeProductos;
-	private double precioTotal;
-	private double pesoTotal;
 	private List<Producto> productos;
 	
+	public Balanza() {		//agregamos contructor nulo para poner en cero la balanza
+		this.ponerEnCero();
+	}
+	
+	/* Puedo conseguir pesoTotal, precioTotal y cantidadProductos recorriendo arreglo 
+	 * o con sus metodos. */
 	public void ponerEnCero() {
-		/*
-		  Puedo conseguir pesoTotal, precioTotal y cantidadProductos recorriendo arreglo 
-		  o con sus metodos. 
-		*/
-		this.cantiadadDeProductos = 0;
-		this.precioTotal = 0;
-		this.pesoTotal = 0;
 		this.productos = new ArrayList<Producto>();
 	}
-
+	
 	public void agregarProducto(Producto producto) {
-		this.cantiadadDeProductos++;
-		this.precioTotal+= producto.getPrecio();
-		this.pesoTotal+= producto.getPeso();
 		this.productos.add(producto);
 	}
 
-	public double getPesoTotal() {
-		return this.pesoTotal;
+	public double getPesoTotal() {		//usar los Stream
+		double pesoTotal = 0;		//no usar las variables privadas, crear locales
+		for (Producto producto: productos) {
+			pesoTotal+= producto.getPeso(); 
+		}
+		return pesoTotal;
 	}
 
 	public double getPrecioTotal() {
-		return this.precioTotal;
+		double precioTotal = 0;
+		for (Producto producto: productos) {
+			precioTotal+= producto.getPrecio(); 
+		}
+		return precioTotal;
 	}
 
 	public int getCantidadDeProductos() {
-		return this.cantiadadDeProductos;
+		return this.productos.size();
 	}
 	
 	//getProductos() : List<Producto>
@@ -52,7 +53,7 @@ public class Balanza {
 	}
 
 	public Ticket emitirTicket() {
-		Ticket ticket = new Ticket(this.getCantidadDeProductos(), this.getPesoTotal(), this.getPrecioTotal());
+		Ticket ticket = new Ticket(this.getProductos());
 		return ticket;
 	}
 	
