@@ -9,11 +9,17 @@ class CajaDeAhorroTest {
 	
 	private CajaDeAhorro cajaDeAhorro;
 	
-	@BeforeEach
+	/*
+	BeforeEach: método que prepara lo que se necesita para los test, y ya
+	todo queda en la variable de inscancia
+	*/
+	@BeforeEach	
 	void setUp() throws Exception {
 		cajaDeAhorro = new CajaDeAhorro();
 	}
-
+	/*
+	 LOS TEST SON IDEPENDIENTES
+	 */
 	@Test
 	void testSaldo() {
 		assertEquals(0, cajaDeAhorro.getSaldo());

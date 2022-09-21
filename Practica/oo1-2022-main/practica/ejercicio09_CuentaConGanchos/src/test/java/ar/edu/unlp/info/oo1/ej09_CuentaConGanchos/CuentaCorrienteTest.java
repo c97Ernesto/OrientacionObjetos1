@@ -1,17 +1,21 @@
 package ar.edu.unlp.info.oo1.ej09_CuentaConGanchos;
 
-import static org.junit.jupiter.api.Assertions.*;
+/*Lo que importamos de jUnit*/
+import static org.junit.jupiter.api.Assertions.*; 
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CuentaCorrienteTest {
+	
+	/*Definicion y preparación del "fixture"*/
 	private CuentaCorriente cuentaCorriente;
 	
 	@BeforeEach //instanciamos.
 	void setUp() throws Exception {
 		cuentaCorriente = new CuentaCorriente();
 	}
+	//_________________________________________
 	/*
 	 LOS TEST SON IDEPENDIENTES 
 	 */
