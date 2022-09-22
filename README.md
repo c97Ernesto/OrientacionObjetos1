@@ -1,6 +1,6 @@
 <h1>Orientacion a Objetos 1</h1>
 
-<h3><strong><a href="/Capitulo1-Fundamentos">Ejercicios prácticos</a></strong></h3>
+<h3><strong><a href="/Practica/oo1-2022-main/practica">Ejercicios prácticos</a></strong></h3>
 <ul>
     <li>
         <a href="/Practica/oo1-2022-main/practica/ejercicio1-wallpost">Ejercicio01 WallPost</a>
