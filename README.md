@@ -9,6 +9,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio1-wallpost/src/test/java/ar/edu/unlp/oo1/ejercicio1">test</a>
             </ul>
+    </li>
     <li>
         <a href="/Practica/oo1-2022-main/practica/ejercicio02_BalanzaElectronica">Ejercicio02 Balanza Electrónica</a>
             <ul>
@@ -16,6 +17,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio02_BalanzaElectronica/src/test/java/ar/edu/unlp/info/oo1/">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio03_Presupuestos">Ejercicio03 Presupuesto</a>
             <ul>
@@ -23,6 +25,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio03_Presupuestos/src/test/java/ar/edu/info/oo1/ej3_presupuestos/">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada">Ejercicio03 Balanza Electrónica Mejorada</a>
             <ul>
@@ -30,6 +33,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada/src/test/java/ar/edu/unlp/info/oo1/">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos">Ejercicio04 Figuras y Cuerpos</a>
             <ul>
@@ -37,6 +41,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos/src/test/java/ar/edu/info/oo1/ej4_figuras/">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje">Ejercicio05 Genealogía Salvaje</a>
             <ul>
@@ -44,6 +49,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje/src/test/java/ar/edu/unlp/info/oo1/ejercicio5/">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado">Ejercicio06 Red de Alumbrado</a>
             <ul>
@@ -51,6 +57,7 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/test/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado">test</a>
             </ul>
+    </li>
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/">Ejercicio09 Cuenta con Ganchos</a>
             <ul>
@@ -58,4 +65,5 @@
                 <br>
                 <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos/">test</a>
             </ul>
+    </li>
 </ul>
