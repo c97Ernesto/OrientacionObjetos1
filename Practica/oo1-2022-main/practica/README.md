@@ -1,4 +1,4 @@
-<h1>Ejercicios Prácticos</h1>
+<h1 id="ejercicios-prácticos">Ejercicios Prácticos</h1>
 
 <ul>
     <li>
