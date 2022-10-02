@@ -61,9 +61,26 @@
     <li>
             <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/">Ejercicio09 Cuenta con Ganchos</a>
             <ul>
-                <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos/">main</a>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos">main</a>
                 <br>
-                <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos/">test</a>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos">test</a>
             </ul>
     </li>
+    <li>
+            <a href="/Practica/oo1-2022-main/practica/ejercicio11_ElInversor">Ejercicio11 El Inversor</a>
+            <ul>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio11_ElInversor/src/main/java/ar/edu/unlp/info/oo1/ej11_ElInversor">main</a>
+                <br>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio11_ElInversor/src/test/java/ar/edu/unlp/info/oo1/ej11_ElInversor">test</a>
+            </ul>
+    </li>
+    <li>
+            <a href="/Practica/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos">Ejercicio12 Volumen y Superficie de sólidos</a>
+            <ul>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos">main</a>
+                <br>
+                <a href="/Practica/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos">test</a>
+            </ul>
+    </li>
+
 </ul>
