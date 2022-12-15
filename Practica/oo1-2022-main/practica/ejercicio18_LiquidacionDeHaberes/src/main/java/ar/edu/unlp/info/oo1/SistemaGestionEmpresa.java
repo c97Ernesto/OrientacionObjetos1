@@ -55,17 +55,17 @@ public class SistemaGestionEmpresa {
 //	sistema genera un recibo de sueldo. El sistema devuelve los recibos de sueldo. De un
 //	recibo de sueldo puede obtenerse la siguiente información: el nombre, apellido, CUIL y
 //	antigüedad en la empresa del empleado al que pertenece el recibo; la fecha en la que fue
-//	generado el recibo; y el monto total que le corresponde cobrar al empleado.
+//	generado el recibo y el monto total que le corresponde cobrar al empleado.
+	public List<ReciboDeSueldo> recibosDeCobro() {
+		return this.empleadosActivos().stream()
+				.map(empleado -> empleado.generarRecibo())
+				.collect(Collectors.toList());
+	}
+	
 	public List<Empleado> empleadosActivos(){
 		return this.empleados.stream()
 				.filter(empleado -> empleado.contratoActivo())
 				.collect(Collectors.toList());
-	}
-	
-	public List<ReciboDeSueldo> recibosDeCobro() {
-		
-		empleadosActivos.generar
-		
 	}
 }
  
