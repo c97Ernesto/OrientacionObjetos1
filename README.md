@@ -169,7 +169,7 @@ Enlaces a la solución:
 
 Enlaces a la solución:
 - [Clases main](Practica/oo1-2022-main/practica/ejercicio15_AlquilerDePropiedades/src/main/java/ar/edu/unlp/info/oo1)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio15_AlquilerDePropiedades/src/test/java/ar/edu/unlp/info/oo1)
+
 
 
 ## Ejercicio 16: Políticas de cancelación
@@ -177,7 +177,6 @@ Enlaces a la solución:
 
 Enlaces a la solución:
 - [Clases main](/Practica/oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/main/java/ar/edu/unlp/info/oo1)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/test/java/ar/edu/unlp/info/oo1)
 
 
 ## Ejercicio 17: Facturación de llamadas
@@ -192,7 +191,7 @@ Enlaces a la solución:
 
 Enlaces a la solución:
 - [Clases main](/Practica/oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/main/java/ar/edu/unlp/info/oo1)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/test/java/ar/edu/unlp/info/oo1)
+
 
 
 ## Ejercicio 19: Mercado de objetos
