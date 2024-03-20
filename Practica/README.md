@@ -4,31 +4,31 @@
 **Descripción:** En términos generales, la Balanza electrónica recibe productos (uno a uno), y calcula dos totales: peso total y precio total. Además la balanza puede poner en cero todos sus valores. La balanza no guarda los productos. Luego emite un ticket que indica número de productos considerados, peso total, precio total. <br/>
 **Implemente:** Cree un nuevo proyecto Maven llamado balanzaElectronica, siguiendo los pasos del documento “Trabajando con proyectos Maven, crear un proyecto Maven nuevo”. En el paquete correspondiente, programe las clases que se muestran a continuación.
 </br>
-![ejer2](Practica/imagenes-ejercicios/ejer2.jpeg)
-![ejer2b](Practica/imagenes-ejercicios/ejer2b.jpeg)
+![ejer2](imagenes-ejercicios/ejer2.jpeg)
+![ejer2b](imagenes-ejercicios/ejer2b.jpeg)
 </br>
 Observe que no se documentan en el diagrama los mensajes que nos permiten obtener y establecer los atributos de los objetos (accessors). Aunque no los incluimos, verá que los tests fallan si no los implementa. Consulte con el ayudante para identificar, a partir de los tests que fallan, cuales son los accessors necesarios (pista: todos menos los setters de balanza). Todas las clases son subclases de Object. <br/>
 **Nota:** Para las fechas, utilizaremos la clase java.time.LocalDate. Para crear la fecha actual, puede utilizar LocalDate.now(). </br>
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio02_BalanzaElectronica/src/main/java/ar/edu/unlp/info/oo1)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio02_BalanzaElectronica/src/test/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio02_BalanzaElectronica/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases test](oo1-2022-main/practica/ejercicio02_BalanzaElectronica/src/test/java/ar/edu/unlp/info/oo1)
 
 ## Ejercicio 3: Presupuestos </br>
 Defina el proyecto Ejercicio 3 - Presupuesto y dentro de él Implemente las clases que se observan en el siguiente diagrama. Ambas son subclases de Object. Preste atención a los siguientes aspectos
 </br>
-![ejer2](Practica/imagenes-ejercicios/ejer3.jpeg)
+![ejer2](imagenes-ejercicios/ejer3.jpeg)
 
 **Probando su código:** Utilice los tests provistos para confirmar que su implementación ofrece la funcionalidad esperada. En este caso, se trata de dos clases, ItemTest y PresupuestoTest, que debe agregar dentro del paquete tests. Haga las modificaciones necesarias para que el proyecto no tenga errores. Siéntase libre de explorar las clases de test para intentar entender qué es lo que hacen. </br>
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio03_Presupuestos/src/main/java/ar/edu/info/oo1/ej3_presupuestos)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio03_Presupuestos/src/test/java/ar/edu/info/oo1/ej3_presupuestos)
+- [Clases main](oo1-2022-main/practica/ejercicio03_Presupuestos/src/main/java/ar/edu/info/oo1/ej3_presupuestos)
+- [Clases test](oo1-2022-main/practica/ejercicio03_Presupuestos/src/test/java/ar/edu/info/oo1/ej3_presupuestos)
 
 ## Ejercicio 3 - Bis: Balanza mejorada </br>
 **Tarea 1:** Mejorar la balanza para que recuerde los productos ingresados (los mantenga en una colección). Analice de qué forma puede realizarse este nuevo requerimiento e implemente el mensaje `getProductos() : List<Producto>` que retorna todos los productos ingresados a la balanza (en la compra actual, es decir, desde la última vez que se la puso a cero). <br/>
 **Tarea 2:** Con esta nueva funcionalidad, podemos enriquecer al Ticket, haciendo que él también conozca a los productos (a futuro podríamos imprimir el detalle). Ticket también debería entender el mensaje `getProductos():List<Producto>`. </br>
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada/src/main/java/ar/edu/unlp/info/oo1)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada/src/test/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases test](oo1-2022-main/practica/ejercicio03_BalanzaElectronicaMejorada/src/test/java/ar/edu/unlp/info/oo1)
 
 ## Ejercicio 4: Figuras y cuerpos </br>
 **Figuras en 2D** </br>
@@ -37,7 +37,7 @@ El siguiente diagrama de clases documenta los mensajes que estos objetos deben e
 Decida usted qué variables de instancia son necesarias. Ambas clases son subclases de Object. <br/>
 Puede agregar mensajes adicionales si lo cree necesario.
 </br>
-![ejer2](Practica/imagenes-ejercicios/ejer4.jpeg)
+![ejer2](imagenes-ejercicios/ejer4.jpeg)
 
 Fórmulas y mensajes útiles:
 - Diámetro del círculo: radio * 2
@@ -50,7 +50,7 @@ Ahora que tenemos Círculos y Cuadrados, podemos usarlos para construir cuerpos 
 Si reemplazamos la cara basal por un rectángulo, tendremos un prisma (una caja de zapatos).<br/>
 El siguiente diagrama de clases documenta los mensajes que entiende un cuerpo3D. Decida usted qué variables de instancia son necesarias. Cuerpo3D es subclase de Object.<br/>
 Decida usted si es necesario hacer cambios en las figuras 2D. </br>
-![ejer2](Practica/imagenes-ejercicios/ejer4b.jpeg) 
+![ejer2](imagenes-ejercicios/ejer4b.jpeg) 
 </br>
 Fórmulas útiles:
 - El área o superficie exterior de un cuerpo es: 2* área-cara-basal + perímetro-cara-basal * altura-del-cuerpo.
@@ -60,8 +60,8 @@ Siguiendo los ejemplos de ejercicios anteriores, ejecute las pruebas automatizad
 Haga las modificaciones necesarias para que el proyecto no tenga errores. Si algún test no
 pasa, consulte al ayudante. </br>
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos/src/main/java/ar/edu/info/oo1/ej4_figuras)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos/src/test/java/ar/edu/info/oo1/ej4_figuras)
+- [Clases main](oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos/src/main/java/ar/edu/info/oo1/ej4_figuras)
+- [Clases test](oo1-2022-main/practica/ejercicio04_ FigurasYCuerpos/src/test/java/ar/edu/info/oo1/ej4_figuras)
 
 ## Ejercicio 5: Genealogía salvaje </br>
 En una reserva de vida salvaje (como la estación de cría ECAS, en el camino Centenario),
@@ -71,7 +71,7 @@ a) Modelar en objetos y programar la clase Mamífero (como subclase de Object). 
 siguiente diagrama de clases (incompleto) nos da una idea de los mensajes que un
 mamífero entiende. 
 </br>
-![ejer5](Practica/imagenes-ejercicios/ejer5.jpeg) 
+![ejer5](imagenes-ejercicios/ejer5.jpeg) 
 </br>
 b) Complete el diagrama de clases para reflejar los atributos y relaciones requeridos. </br>
 Observe que no se documentan en el diagrama los mensajes que nos permiten obtener y
@@ -85,11 +85,11 @@ c) Siguiendo los ejemplos de ejercicios anteriores, ejecute las pruebas automati
 provistas. En este caso, se trata de una clase, MamiferoTest, que debe agregar dentro del
 paquete tests. 
 </br>
-![ejer5b](Practica/imagenes-ejercicios/ejer5b.jpeg) 
+![ejer5b](imagenes-ejercicios/ejer5b.jpeg) 
 </br>
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje/src/main/java/ar/edu/unlp/info/oo1/ejercicio5)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje/src/test/java/ar/edu/unlp/info/oo1/ejercicio5)
+- [Clases main](oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje/src/main/java/ar/edu/unlp/info/oo1/ejercicio5)
+- [Clases test](oo1-2022-main/practica/ejercicio05_GenealogiaSalvaje/src/test/java/ar/edu/unlp/info/oo1/ejercicio5)
 
 ## Ejercicio 6: Red de Alumbrado
 Imagine una red de alumbrado donde cada farola está conectada a una o varias vecinas formando un grafo conexo2. Cada una de las farolas tiene un interruptor. Es suficiente con encender o apagar una farola cualquiera para que se enciendan o apaguen todas las demás. </br>
@@ -101,8 +101,8 @@ La funcionalidad a proveer permite:
 4. apagar una farola (y obtener el efecto antes descrito). </br>
 **Tareas:** Realice el diagrama UML de clases de la solución al problema. </br>
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/main/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/test/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
+- [Clases main](/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/main/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
+- [Clases test](/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/test/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
 
 ## Ejercicio 8: Distribuidora Electrica
 
@@ -114,7 +114,7 @@ Para emitir la factura de un cliente se tiene en cuenta su último consumo y se 
 bonificado con el 10%. </br>
 Además, la empresa está interesada en poder saber cuál fue el total de energía activa consumida por toda la red en el último periodo medido (es decir, teniendo en cuenta sólo la última medición de cada usuario). </br>
 El siguiente diagrama de clases muestra el diseño para este problema. Agregue los métodos que considere necesarios. </br>
-![ejer8](Practica/imagenes-ejercicios/ejer8.jpeg)
+![ejer8](imagenes-ejercicios/ejer8.jpeg)
 </br>
 **Tareas** </br>
 Siguiendo el diseño que se muestra en el diagrama de clases, implemente la funcionalidad que se describe en el enunciado, en particular en lo referente a: 
@@ -133,42 +133,42 @@ En una clase de test, cree los test de unidad necesarios para poder evaluar: </b
 
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio08_DistribuidoraElectrica/src/main/java/ar/edu/unlp/info/oo1/ej08_distribuidoraElectrica)
+- [Clases main](/oo1-2022-main/practica/ejercicio08_DistribuidoraElectrica/src/main/java/ar/edu/unlp/info/oo1/ej08_distribuidoraElectrica)
 
 
 ## Ejercicio 9: Cuenta con Ganchos
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
+- [Clases main](/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
+- [Clases test](/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
 
 
 ## Ejercicio 11: El inversor
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio11_ElInversor/src/main/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio11_ElInversor/src/test/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
+- [Clases main](/oo1-2022-main/practica/ejercicio11_ElInversor/src/main/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
+- [Clases test](/oo1-2022-main/practica/ejercicio11_ElInversor/src/test/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
 
 
 ## Ejercicio 12: Volumen y Superficie de Sólidos
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
-- [Clases test](/Practica/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/test/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
+- [Clases main](/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
+- [Clases test](/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/test/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
 
 
 ## Ejercicio 13: Cliente de Correo con Adjuntos
 
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio13_ClienteDeCorreo/src/main/java/ar/edu/unlp/info/oo1/ej13_ClienteDeCorreo)
-- [Clases test](Practica/oo1-2022-main/practica/ejercicio13_ClienteDeCorreo/src/test/java/ar/edu/unlp/info/oo1/ej13_ClienteDeCorreo)
+- [Clases main](oo1-2022-main/practica/ejercicio13_ClienteDeCorreo/src/main/java/ar/edu/unlp/info/oo1/ej13_ClienteDeCorreo)
+- [Clases test](oo1-2022-main/practica/ejercicio13_ClienteDeCorreo/src/test/java/ar/edu/unlp/info/oo1/ej13_ClienteDeCorreo)
 
 
 ## Ejercicio 15: Alquiler de propiedades
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](Practica/oo1-2022-main/practica/ejercicio15_AlquilerDePropiedades/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio15_AlquilerDePropiedades/src/main/java/ar/edu/unlp/info/oo1)
 
 
 
@@ -176,21 +176,21 @@ Enlaces a la solución:
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](/oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/main/java/ar/edu/unlp/info/oo1)
 
 
 ## Ejercicio 17: Facturación de llamadas
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio17_FacturacionDeLlamadas/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](/oo1-2022-main/practica/ejercicio17_FacturacionDeLlamadas/src/main/java/ar/edu/unlp/info/oo1)
 
 
 ## Ejercicio 18: Liquedación de haberes
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](/oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/main/java/ar/edu/unlp/info/oo1)
 
 
 
@@ -198,5 +198,5 @@ Enlaces a la solución:
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/Practica/oo1-2022-main/practica/ejercicio19_MercadoDeObjetos/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio19_MercadoDeObjetos/src/main/java/ar/edu/unlp/info/oo1)
 
