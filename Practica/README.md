@@ -101,8 +101,8 @@ La funcionalidad a proveer permite:
 4. apagar una farola (y obtener el efecto antes descrito). </br>
 **Tareas:** Realice el diagrama UML de clases de la solución al problema. </br>
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/main/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
-- [Clases test](/oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/test/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
+- [Clases main](oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/main/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
+- [Clases test](oo1-2022-main/practica/ejercicio06_RedDeAlumbrado/src/test/java/ar/edu/unlp/info/oo1/ej06_redDeAlumbrado)
 
 ## Ejercicio 8: Distribuidora Electrica
 
@@ -133,28 +133,28 @@ En una clase de test, cree los test de unidad necesarios para poder evaluar: </b
 
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio08_DistribuidoraElectrica/src/main/java/ar/edu/unlp/info/oo1/ej08_distribuidoraElectrica)
+- [Clases main](oo1-2022-main/practica/ejercicio08_DistribuidoraElectrica/src/main/java/ar/edu/unlp/info/oo1/ej08_distribuidoraElectrica)
 
 
 ## Ejercicio 9: Cuenta con Ganchos
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
-- [Clases test](/oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
+- [Clases main](oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/main/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
+- [Clases test](oo1-2022-main/practica/ejercicio09_CuentaConGanchos/src/test/java/ar/edu/unlp/info/oo1/ej09_CuentaConGanchos)
 
 
 ## Ejercicio 11: El inversor
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio11_ElInversor/src/main/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
-- [Clases test](/oo1-2022-main/practica/ejercicio11_ElInversor/src/test/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
+- [Clases main](oo1-2022-main/practica/ejercicio11_ElInversor/src/main/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
+- [Clases test](oo1-2022-main/practica/ejercicio11_ElInversor/src/test/java/ar/edu/unlp/info/oo1/ej11_ElInversor)
 
 
 ## Ejercicio 12: Volumen y Superficie de Sólidos
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
-- [Clases test](/oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/test/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
+- [Clases main](oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/main/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
+- [Clases test](oo1-2022-main/practica/ejercicio12_VolumenYSuperficieDeSolidos/src/test/java/ar/edu/unlp/info/oo1/ej12_VolYSupeDeSolidos)
 
 
 ## Ejercicio 13: Cliente de Correo con Adjuntos
@@ -176,21 +176,21 @@ Enlaces a la solución:
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio16_PoliticasDeCancelacion/src/main/java/ar/edu/unlp/info/oo1)
 
 
 ## Ejercicio 17: Facturación de llamadas
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio17_FacturacionDeLlamadas/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio17_FacturacionDeLlamadas/src/main/java/ar/edu/unlp/info/oo1)
 
 
 ## Ejercicio 18: Liquedación de haberes
 **Nota: este ejercicio es del estilo de los que encontrarán en la evaluación parcial**
 
 Enlaces a la solución:
-- [Clases main](/oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/main/java/ar/edu/unlp/info/oo1)
+- [Clases main](oo1-2022-main/practica/ejercicio18_LiquidacionDeHaberes/src/main/java/ar/edu/unlp/info/oo1)
 
 
 
